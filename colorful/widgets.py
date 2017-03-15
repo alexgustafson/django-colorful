@@ -44,6 +44,7 @@ class ColorFieldWidget(TextInput):
 
     def render(self, name, value, attrs={}):
         parts = []
+        attrs['style'] = 'min-width: 6em;'
         if 'id' not in attrs:
             attrs['id'] = "id_%s" % name
         if self.colors:
